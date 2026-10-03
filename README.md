@@ -1,6 +1,6 @@
 # Emergent Textual Bias in Agentic Social Media Interactions
 
-MSc thesis project investigating whether the identity of the underlying foundation model acts as a latent social attractor in multi-agent polarization dynamics — i.e. whether LLM-driven social media agents built on different base models drift into distinguishable textual "echo chambers" through interaction alone.
+MSc thesis project investigating whether the identity of the underlying foundation model acts as a latent social attractor in multi-agent polarization dynamics; i.e. whether LLM-driven social media agents built on different base models drift into distinguishable textual "echo chambers" through interaction alone.
 
 ## Overview
 

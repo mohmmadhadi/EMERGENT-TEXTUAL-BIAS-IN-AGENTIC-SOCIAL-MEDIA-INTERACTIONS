@@ -4,7 +4,7 @@ MSc thesis project investigating whether the identity of the underlying foundati
 
 ## Overview
 
-This repository holds the analysis pipeline for a thesis on emergent textual bias in agentic social media workflows. Multi-agent simulations were run on the [YSocial](https://ysocial.app/) platform, seeding populations of LLM-driven agents on a simulated social network and observing how their posting behavior evolves over time. The core question is whether agents built on different foundation models naturally segregate into distinct stylistic/stance clusters — an echo-chamber effect emerging purely from agent-agent interaction, without any explicit polarization being engineered into the simulation.
+This repository holds the analysis pipeline for a thesis on emergent textual bias in agentic social media interaction. Multi-agent simulations were run on the [YSocial](https://ysocial.app/) platform, seeding populations of LLM-driven agents on a simulated social network and observing how their posting behavior evolves over time. The core question is whether agents built on different foundation models naturally segregate into distinct stylistic/stance clusters — an echo-chamber effect emerging purely from agent-agent interaction, without any explicit polarization being engineered into the simulation.
 
 **Experimental setup:**
 - 29 multi-agent simulation runs
@@ -21,10 +21,10 @@ This repository holds the analysis pipeline for a thesis on emergent textual bia
 
 ## Methodology
 
-1. **Simulation** — Agent populations are instantiated on YSocial, each agent backed by one of three foundation models, and left to interact (post, reply, follow) over a simulated timeline.
-2. **Embedding & stance scoring** — Posts are embedded with SBERT; a stance score is computed per post using an ensemble scoring approach.
-3. **Community detection** — Agent-level similarity/interaction graphs are clustered with the Louvain algorithm to identify emergent communities.
-4. **Echo chamber scoring** — A composite echo chamber score combines stance homogeneity within communities and separation between them, tracked across the simulation timeline to capture *temporal* emergence rather than a single end-state snapshot.
+1. **Simulation**: Agent populations are instantiated on YSocial, each agent backed by one of three foundation models, and left to interact (post, reply, follow) over a simulated timeline.
+2. **Embedding & stance scoring**: Posts are embedded with SBERT; a stance score is computed per post using an ensemble scoring approach.
+3. **Community detection**: Agent-level similarity/interaction graphs are clustered with the Louvain algorithm to identify emergent communities.
+4. **Echo chamber scoring**: A composite echo chamber score combines stance homogeneity within communities and separation between them, tracked across the simulation timeline to capture *temporal* emergence rather than a single end-state snapshot.
 
 
 ## Citation
